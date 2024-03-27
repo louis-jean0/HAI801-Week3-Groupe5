@@ -8,7 +8,7 @@
 using namespace std;
 
 // Taille de la grille, à définir en fonction de votre dataset
-const int N = 5;
+const int N = 6;
 
 // Évalue l'état actuel du plateau de jeu pour déterminer un score
 int evaluate(const vector<vector<char>>& board) {
@@ -125,7 +125,7 @@ int simulateGame(vector<vector<char>>& board, char player) {
 }
 
 int main() {
-    ifstream file("dataset5.txt");
+    ifstream file("dataset6.txt");
     string line;
     int winsForX = 0, winsForO = 0, draw = 0, cpt = 0;
     auto start = chrono::high_resolution_clock::now();
