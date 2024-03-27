@@ -131,8 +131,8 @@ int simulateGame(vector<vector<char>>& board, char player) {
     return evaluate(board);
 }
 
-int main() {
-    ifstream file("dataset.txt"); // Ouvre le fichier de dataset pour lecture
+int main(int argc, char* argv[]) {
+    ifstream file("dataset3.txt"); // Ouvre le fichier de dataset pour lecture
     string line;  // Pour stocker chaque ligne lue du fichier
     int winsForX = 0, winsForO = 0, draw = 0, cpt = 0; // Compteurs pour les résultats
     auto start = chrono::high_resolution_clock::now();  // Démarre le chronomètre pour le temps d'exécution
